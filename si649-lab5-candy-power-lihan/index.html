@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>SI 649 Candy Power</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body>
+
+        <h1 class="centered"> The Ultimate Halloween Candy Power Ranking </h1>
+        <p class="centered" style="color: grey;"><small>These treats ill make you the most popular house in your neighborhood. </small></p>
+
+        <div class="setting_div">
+            <h4> Filter by: </h4>
+            <div class="setting_detail_div">
+                <span class="checkbox_span">
+                    <input type="checkbox" class="checkbox" value="all" id="checkbox_all" checked>
+                    <p class = "checkbox_lable">All</p>
+                </span>
+                <span class="checkbox_span">
+                    <input type="checkbox" class="checkbox checkbox_notAll" value="chocolate">
+                    <p class = "checkbox_lable">Chocolate</p>
+                </span>
+                <span class="checkbox_span">
+                    <input type="checkbox" class="checkbox checkbox_notAll" value="fruity">
+                    <p class = "checkbox_lable">Fruit</p>
+                </span>
+                <span class="checkbox_span">
+                    <input type="checkbox" class="checkbox checkbox_notAll" value="caramel">
+                    <p class = "checkbox_lable">Caramel</p>
+                </span>
+                <span class="checkbox_span">
+                    <input type="checkbox" class="checkbox checkbox_notAll" value="peanutyalmondy">
+                    <p class = "checkbox_lable">Peanut Almondy</p>
+                </span>
+                <span class="checkbox_span">
+                    <input type="checkbox" class="checkbox checkbox_notAll" value="nougat">
+                    <p class = "checkbox_lable">Nougat</p>
+                </span>
+                <span class="checkbox_span">
+                    <input type="checkbox" class="checkbox checkbox_notAll" value="crispedricewafer">
+                    <p class = "checkbox_lable">Crisped Rice Wafer</p>
+                </span>
+            </div>
+        </div>
+
+        <div class="setting_div">
+            <h4> Sort by: </h4>
+            <div class="setting_detail_div">
+                <button class="selected" value="winpercent"> Rank </button>
+                <button value="pricepercent"> Price </button>
+                <button value="sugarpercent"> Sugar Content </button>
+            </div>
+        </div>
+
+        <div class="chart_div" >
+            <h4> Visualization: </h4>
+            <div id="chart"></div>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+        <script type="text/javascript" src="js/draw.js"></script>
+    </body>
+</html>

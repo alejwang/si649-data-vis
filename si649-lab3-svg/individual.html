@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Yo</title>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+
+<body>
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function() {
+
+      var width = 200
+      var height = 200 
+      var svg = d3.select("body")
+        .append("svg").attr("width", width).attr("height", height);
+
+      var rectWidth = 20;
+
+      var rows = svg.selectAll(".row")
+        .data(d3.range(10))
+        .enter().append("g")
+        .attr("class", "row")
+        .attr("transform", function(d, i) {
+          return "translate(0," + (rectWidth * i) + ")";
+        });
+
+      var rects = rows.selectAll("rect")
+        .data(d3.range(10))
+        .enter().append("rect")
+        .attr("x", function(d, i) {
+          return rectWidth * i;
+        })
+        .attr("height", rectWidth)
+        .attr("width", rectWidth)
+        .attr("stroke", "white");
+
+    }, false);
+  </script>
+</body>
+
+</html>

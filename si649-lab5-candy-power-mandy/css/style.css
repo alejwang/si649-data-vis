@@ -1,0 +1,102 @@
+body {
+    font-family: "Lucida Console", Consolas, "Courier New";
+}
+h1 {
+    font-family: "Lucida Console", Consolas, "Courier New";
+    font-size: 40px;
+    font-style: bold;
+    text-transform: uppercase;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    padding: 3px 0px;
+    font-style: normal;
+    margin-bottom:0.2em;
+}
+
+.desc {
+    font-family: "Mercury SSm A", "Mercury SSm B";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.4em;
+    margin: 0 auto;
+}
+
+.centered{
+    text-align:center;
+}
+
+
+h6 {
+    padding: 10px 0px 3px;
+    font-family: 'Helvetica', 'Consolas';
+    font-size: 0.8em;
+    display: block;
+}
+
+.button {
+    width: 150px;
+    height: 40px;
+    padding: 0 5px;
+    margin-right: 20px;
+    margin-bottom: 3px;
+    line-height: 40px;
+    cursor: pointer;
+    text-align: center;
+    font-size: .8em;
+    border: 1px solid #e0e0e0;
+    float: left;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    text-transform: none !important;
+}
+
+.button:hover {
+    background: #e0e0e0;
+}
+
+.button.current {
+    background: #000;
+    color: #fff;
+}
+
+#n {
+    font-size: 3.0em;
+}
+
+#chart {
+    margin-bottom: 100px
+}
+
+.chartholder{
+    width:12%;
+    margin-right:4%;
+    margin-left: 4%;
+    text-align:left;
+    margin-top:40px;
+    margin-bottom:40px;
+    float:left;
+}
+
+label {
+  display: block;
+  float: left;
+  padding-right: 10px;
+  white-space: nowrap;
+  font-weight: normal !important;
+}
+
+.toolTip {
+    font-family: "Lucida Console", Consolas, "Courier New";
+    position: absolute;
+    min-width: 80px;
+    padding: 2px;
+    height: auto;
+    background: none repeat scroll 0 0 #ffffff;
+    border: 1px solid #069ea8;
+    padding: 10px;
+    text-align: center;
+}

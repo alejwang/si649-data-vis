@@ -1,0 +1,86 @@
+body {
+    font-family: 'Inconsolata', Monaco, "Lucida Console", Consolas, "Courier New";
+    /*    background: #58585B;*/
+}
+h1 {
+    font-family: 'Inconsolata', Monaco, "Lucida Console", Consolas, "Courier New";
+    font-size: 40px;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: 1em;
+    padding: 3px 0px;
+    /*    margin: -5px 0 0px 0;*/
+    font-style: normal;
+    margin-bottom:0.2em;
+}
+
+.chartholder h3 {
+  display: inline-block;
+  height: 40px;
+  padding-right: 5px;
+}
+
+.desc {
+    font-family: "Mercury SSm A", "Mercury SSm B";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.4em;
+    margin: 0 auto;
+}
+
+.centered{
+    text-align:center;
+}
+
+.button {
+    width: 60px;
+    padding: 5px 5px;
+    margin-right: 3px;
+    margin-bottom: 3px;
+    cursor: pointer;
+    text-align: center;
+    font-size: .9em;
+    border: 1px solid #e0e0e0;
+    float: left;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.button:hover {
+    background: #e0e0e0;
+}
+
+.button.current {
+    background: #000;
+    color: #fff;
+}
+
+
+#n {
+    font-size: 3.0em;
+}
+
+
+.chartholder {
+  display: inline-block;
+  margin: 0 0 20px;
+  float: left;
+  width: 134px;
+  height: 173px;
+  max-width: 134px;
+}
+
+#chart1 {
+  padding-top: 100px;
+}
+
+#chart {
+  width: 670px;
+  height: 579px;
+  margin: 0 auto;
+}

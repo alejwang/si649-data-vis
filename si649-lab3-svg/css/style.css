@@ -1,0 +1,14 @@
+body{
+    background: #f7f7f7;
+}
+
+.question{
+ 
+}
+
+.answer{
+    border: 1px solid black;
+    background: white;  
+    min-height:150px;
+    margin-bottom:10px;
+}

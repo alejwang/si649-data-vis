@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="css/skeleton.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Mandy Shen</title>
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script type="text/javascript" src="js/draw.js"></script>
+    <div class="container">
+        <div class="row centered">
+            <div class="six columns offset-by-three alpha">
+                <h1>The Ultimate Halloween Candy Power Ranking</h1>
+            </div>
+        </div>
+        <div class="row centered">
+            <div class="six columns offset-by-three alpha">
+                <p class="desc centered" style="margin-bottom:30px;">These treats will make you the most popular house in the neighborhood.</p>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top:30px;">
+            <div class="eight columns offset-by-three alpha">
+              <div class="row">
+                <h3>Filter by:</h3>
+              </div>
+              <div class="row">
+                <label><input id="all" class="filter" type="checkbox" name="checkb" value="all" onchange="plotChart(this)" checked> All</label>
+                <label><input id="chocolate" class="filter" type="checkbox" value="chocolate" onchange="plotChart(this)"> Chocolate</label>
+                <label><input id="fruity" class="filter" type="checkbox" value="fruity" onchange="plotChart(this)"> Fruity</label>
+                <label><input id="caramel" class="filter" type="checkbox" value="caramel" onchange="plotChart(this)"> Caramel</label>
+                <label><input id="peanutyalmondy" class="filter" type="checkbox" value="peanutyalmondy" onchange="plotChart(this)"> Peanutalmondy</label>
+                <label><input id="nougat" class="filter" type="checkbox" value="nougat" onchange="plotChart(this)"> Nougat</label>
+                <label><input id="crispedricewafer" class="filter" type="checkbox" value="crispedricewafer" onchange="plotChart(this)"> Crispedricewafer</label>
+              </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="eight columns offset-by-three alpha" style="margin-top:10px;">
+
+                <h3>Sort by:</h3>
+
+                <div class="button current" id="winpercent" onclick="resort(this)">Rank</div>
+                <div class="button" id="pricepercent" onclick="resort(this)">Price</div>
+                <div class="button" id="sugarpercent" onclick="resort(this)">Sugar Content</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="ten columns offset-by-two alpha" id="chart">
+            </div>
+        </div>
+    </div>
+
+</body>
+</script>
+</html>
